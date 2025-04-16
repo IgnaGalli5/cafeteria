@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma - Experiencia de café artesanal</title>
+    <link rel="stylesheet" href="stylo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Café Aroma</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="decorative-dots top-right"></div>
+            <h1>Bienvenido a <span class="accent-text">Café Aroma</span></h1>
+            <p>Un espacio donde cada taza cuenta una historia. Descubre el arte del café de especialidad en un ambiente acogedor y auténtico.</p>
+            <a href="#menu" class="cta-button btn-hover-slide">Explorar Menú</a>
+            <div class="decorative-dots bottom-left"></div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="section-intro">
+                <h2>Nuestro Menú</h2>
+                <p>Seleccionamos los mejores granos de café de origen único y creamos mezclas exclusivas para ofrecerte una experiencia sensorial única.</p>
+            </div>
+            
+            <div class="menu-category">
+                <h3 class="menu-category-title">Cafés de Especialidad</h3>
+                <div class="menu-items">
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/espresso.jpg" alt="Café Espresso" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Café concentrado con crema dorada, intenso y con notas de chocolate amargo.</p>
+                                <p class="origin">Origen: Mezcla de Brasil y Colombia</p>
+                            </div>
+                        </div>
+                        <h3>Espresso</h3>
+                        <p>Intenso y aromático</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/capuccino.jpg" alt="Cappuccino" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Equilibrio perfecto entre espresso, leche vaporizada y espuma aterciopelada.</p>
+                                <p class="origin">Origen: Mezcla de Etiopía y Guatemala</p>
+                            </div>
+                        </div>
+                        <h3>Cappuccino</h3>
+                        <p>Cremoso y equilibrado</p>
+                        <p class="price">$3.00</p>
+                    </div>
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/late.jpg" alt="Latte" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Espresso suavizado con abundante leche cremosa y una fina capa de espuma.</p>
+                                <p class="origin">Origen: Mezcla de Colombia y Perú</p>
+                            </div>
+                        </div>
+                        <h3>Latte</h3>
+                        <p>Suave y reconfortante</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/mocha.jpg" alt="Mocha" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Combinación indulgente de espresso, chocolate belga y leche cremosa.</p>
+                                <p class="origin">Origen: Mezcla de Brasil y Honduras</p>
+                            </div>
+                        </div>
+                        <h3>Mocha</h3>
+                        <p>Deliciosa mezcla de café y chocolate</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="menu-category">
+                <h3 class="menu-category-title">Bebidas Especiales</h3>
+                <div class="menu-items">
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/americano.jpg" alt="Café Americano" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Espresso diluido con agua caliente, conservando el sabor pero con menor intensidad.</p>
+                                <p class="origin">Origen: Mezcla de Colombia y Costa Rica</p>
+                            </div>
+                        </div>
+                        <h3>Café Americano</h3>
+                        <p>Clásico y reconfortante</p>
+                        <p class="price">$2.75</p>
+                    </div>
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/frappe.jpg" alt="Frappé" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Bebida helada a base de café, leche y hielo, batida hasta obtener una textura cremosa.</p>
+                                <p class="origin">Origen: Mezcla de Brasil y Vietnam</p>
+                            </div>
+                        </div>
+                        <h3>Frappé</h3>
+                        <p>Refrescante y delicioso</p>
+                        <p class="price">$4.50</p>
+                    </div>
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/iced-tea.jpg" alt="Té Helado" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Infusión de té negro con cítricos, servida con hielo y un toque de menta fresca.</p>
+                                <p class="origin">Origen: Mezcla de tés de Sri Lanka e India</p>
+                            </div>
+                        </div>
+                        <h3>Té Helado</h3>
+                        <p>Refrescante y aromático</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                    <div class="menu-item card-hover-effect scroll-reveal">
+                        <div class="menu-item-image-container img-zoom-effect">
+                            <img src="imagenes/tea.jpg" alt="Té Caliente" class="menu-item-image">
+                            <div class="menu-item-overlay">
+                                <p>Selección de tés premium de hoja suelta, servidos a la temperatura ideal.</p>
+                                <p class="origin">Origen: Variedades de China y Japón</p>
+                            </div>
+                        </div>
+                        <h3>Té Caliente</h3>
+                        <p>Variedad de sabores</p>
+                        <p class="price">$2.50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-content scroll-reveal">
+                <p>
+                    🌿 Bienvenidos a <span class="text-highlight">Café Aroma</span> ☕
+                </p>
+                <p>
+                    Somos un rincón acogedor donde el aroma del café recién hecho se mezcla con el sabor de ingredientes frescos y naturales. Aquí, cada taza y cada plato están pensados para brindarte un momento de disfrute, ya sea que necesites energía para empezar el día o una pausa deliciosa en tu rutina.
+                </p>
+                <p>
+                    Nuestro café proviene de productores locales comprometidos con prácticas sostenibles, asegurando que cada sorbo no solo sea delicioso sino también responsable con el medio ambiente y las comunidades productoras.
+                </p>
+                <p>
+                    Déjate sorprender por nuestro menú, elaborado con amor y el toque especial que nos hace únicos. ¡Te esperamos!
+                </p>
+            </div>
+            <div class="about-image img-zoom-effect scroll-reveal">
+                <img src="imagenes/about-cafe.jpg" alt="Nuestro café">
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery">
+            <div class="section-intro">
+                <h2>Nuestra Galería</h2>
+                <p>Descubre nuestro espacio y nuestras creaciones a través de imágenes que capturan la esencia de Café Aroma.</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-category">
+                    <h3>Nuestro Local</h3>
+                    <div class="gallery-images">
+                        <div class="gallery-image-container scroll-reveal">
+                            <img src="imagenes/int1.jpg" alt="Interior de la cafetería 1" data-full="imagenes/int1.jpg" data-category="local">
+                        </div>
+                        <div class="gallery-image-container scroll-reveal">
+                            <img src="imagenes/int2.jpg" alt="Interior de la cafetería 2" data-full="imagenes/int2.jpg" data-category="local">
+                        </div>
+                        <div class="gallery-image-container scroll-reveal">
+                            <img src="imagenes/int3.jpg" alt="Interior de la cafetería 3" data-full="imagenes/int3.jpg" data-category="local">
+                        </div>
+                        <div class="gallery-image-container scroll-reveal">
+                            <img src="imagenes/int4.jpg" alt="Interior de la cafetería 4" data-full="imagenes/int4.jpg" data-category="local">
+                        </div>
+                        <div class="gallery-image-container scroll-reveal">
+                            <img src="imagenes/int5.jpg" alt="Interior de la cafetería 5" data-full="imagenes/int5.jpg" data-category="local">
+                        </div>
+                        <div class="gallery-image-container scroll-reveal">
+                            <img src="imagenes/int6.jpg" alt="Interior de la cafetería 6" data-full="imagenes/int6.jpg" data-category="local">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-category">
+                    <h3>Nuestros Productos</h3>
+                    <div class="gallery-images">
+                        <div class="product scroll-reveal">
+                            <div class="product-image-container">
+                                <img src="imagenes/huevos.jpg" alt="Huevos revueltos" data-full="imagenes/huevos.jpg" data-category="productos">
+                            </div>
+                            <p>🍳 Suaves, cremosos y con el punto justo de cocción. Acompañados de pan tostado para un desayuno clásico y reconfortante.</p>
+                        </div>
+                        <div class="product scroll-reveal">
+                            <div class="product-image-container">
+                                <img src="imagenes/granola.jpg" alt="Tazón de yogur y granola" data-full="imagenes/granola.jpg" data-category="productos">
+                            </div>
+                            <p>🥣 Suavidad y crocantez en cada cucharada. Yogur natural acompañado de granola casera y un toque de miel.</p>
+                        </div>
+                        <div class="product scroll-reveal">
+                            <div class="product-image-container">
+                                <img src="imagenes/hotcakes.jpg" alt="Pancakes y miel" data-full="imagenes/hotcakes.jpg" data-category="productos">
+                            </div>
+                            <p>🥞 Esponjosos, dorados y bañados en miel. Un placer simple pero irresistible.</p>
+                        </div>
+                        <div class="product scroll-reveal">
+                            <div class="product-image-container">
+                                <img src="imagenes/palta.jpg" alt="Tostadas con palta, huevo y tomate" data-full="imagenes/palta.jpg" data-category="productos">
+                            </div>
+                            <p>🥑 Pan crujiente, palta cremosa, huevo perfectamente cocido y tomate fresco. Un clásico saludable que nunca falla.</p>
+                        </div>
+                        <div class="product scroll-reveal">
+                            <div class="product-image-container">
+                                <img src="imagenes/tostado.jpg" alt="Tostado de jamón y queso" data-full="imagenes/tostado.jpg" data-category="productos">
+                            </div>
+                            <p>🥪 El dúo perfecto: pan dorado y crujiente con queso fundido y jamón de calidad. Ideal para cualquier momento del día.</p>
+                        </div>
+                        <div class="product scroll-reveal">
+                            <div class="product-image-container">
+                                <img src="imagenes/yogu.jpg" alt="Tazón de yogur y frutas" data-full="imagenes/yogu.jpg" data-category="productos">
+                            </div>
+                            <p>🍓 Refrescante y nutritivo. Yogur natural con una selección de frutas frescas de temporada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="section-intro">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna pregunta o comentario? Nos encantaría saber de ti.</p>
+            </div>
+            <div class="contact-container">
+                <form id="contact-form" class="scroll-reveal">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="btn-hover-slide">Enviar</button>
+                </form>
+                <div id="map" class="scroll-reveal"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">Café Aroma</div>
+                <p>📍 Dirección: Av. Principal 123, Ciudad</p>
+                <p>📞 Teléfono: +123 456 789</p>
+                <p>📧 Email: contacto@cafearoma.com</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank"><img src="logos/facebook.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="logos/instagram.png" alt="Instagram"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="logos/x.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+        </div>
+        <p class="footer-phrase">☕ Ven a descubrir el aroma perfecto. ¡Te esperamos con una taza lista para ti!</p>
+    </footer>
+    
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content gallery-modal-content">
+            <span class="close">&times;</span>
+            <img id="gallery-full-image" src="/placeholder.svg" alt="Imagen en tamaño completo">
+            <div class="gallery-navigation">
+                <button id="prev-image">&lt; Anterior</button>
+                <button id="next-image">Siguiente &gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
